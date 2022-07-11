@@ -1,0 +1,239 @@
+@import "../partials/partials"; 
+
+.player-page {
+    width: 100%; 
+    @extend .center; 
+
+    .player-container {
+        width: 100%; 
+        @extend .center; 
+        flex-direction: column; 
+        margin-top: 65px; 
+
+        .general-info-container {
+            width: 90%; 
+            @extend .center; 
+            flex-direction: column; 
+            margin: 45px 0px; 
+
+            .head-background {
+                width: 100px; 
+                height: 100px; 
+                background-color: $main-light; 
+                @extend .center; 
+                border-radius: 100%; 
+
+                img {
+                    width: 55px; 
+                    height: auto; 
+                }
+            }
+
+            h2 {
+                margin: 0px; 
+                font-size: $title-font - 0.25em; 
+                font-family: $title-family; 
+                text-align: center; 
+                margin: 10px 0px; 
+            } 
+
+            p {
+                margin: 0px; 
+                font-size: $sub-font; 
+                font-family: $sub-family; 
+                color: $highlight-color; 
+            }
+        }
+
+        .player-sub-info-container {
+            width: 90%; 
+            background-color: $main-light; 
+            margin: 15px 0px; 
+            padding: 25px 0px; 
+            border-radius: 15px; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(45%, 2fr)); 
+            row-gap: 25px; 
+            justify-items: center;
+
+            #content {
+                width: 100%; 
+                @extend .center; 
+                flex-direction: column; 
+
+                h3 {
+                    margin: 0px; 
+                    font-family: $title-family; 
+                    font-size: $title-font - 1.15em;  
+                } 
+
+                p {
+                    margin: 0px; 
+                    color: $highlight-color; 
+                    font-size: $sub-font - 0.25em; 
+                    font-family: $sub-family; 
+                }
+            }
+        } 
+
+        .upcoming-matches-container {
+            width: 100%; 
+            @extend .center; 
+            flex-direction: column; 
+
+            h2 {
+                margin: 0px; 
+                margin-top: 45px; 
+                margin-bottom: 25px; 
+                font-size: $title-font - 0.5em; 
+                font-family: $title-family; 
+            } 
+
+            .upcoming-matches-content-container {
+                width: 100%; 
+                @extend .center; 
+                flex-direction: column; 
+
+                h4 {
+                    margin: 15px 0px; 
+                    font-size: $title-font - 1em; 
+                    font-family: $title-family; 
+                }
+
+                .upcoming-matches-content {
+                    width: 100%; 
+                    padding: 15px 0px; 
+                    @extend .center; 
+                    border-top: 1px solid $main-light; 
+                    color: $tertiary-color; 
+                    text-decoration: none; 
+
+                    .upcoming-matches {
+                        width: 90%; 
+                        @extend .center; 
+                        justify-content: space-between; 
+
+                        #left-team-content {
+                            width: 35%; 
+                            @extend .center; 
+                            justify-content: space-between; 
+                            color: $tertiary-color; 
+                            text-decoration: none; 
+
+                            img {
+                                width: 15px; 
+                                height: auto; 
+                                max-height: 20px; 
+                            }
+    
+                            #team-names {
+                                font-size: $sub-font - 0.35em; 
+                                font-family: $sub-family; 
+                                text-align: right; 
+                            }
+                        } 
+
+                        p {
+                            margin: 0px; 
+                            width: auto; 
+                            font-size: $sub-font; 
+                            font-family: $sub-family; 
+                            font-weight: bolder; 
+                            text-align: center; 
+                            color: $highlight-color; 
+                        } 
+
+                        #right-team-content {
+                            width: 35%; 
+                            @extend .center; 
+                            justify-content: space-between; 
+                            color: $tertiary-color; 
+                            text-decoration: none; 
+
+                            img {
+                                width: 15px; 
+                                height: auto; 
+                                max-height: 20px; 
+                            }
+    
+                            #team-names {
+                                font-size: $sub-font - 0.35em; 
+                                font-family: $sub-family; 
+                                text-align: left; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+
+@media only screen and (min-width: 600px) {
+    .player-page .player-container .player-sub-info-container {
+        grid-template-columns: repeat(auto-fit, minmax(25%, 2fr)); 
+    }
+} 
+
+@media only screen and (min-width: 1024px) {
+    .player-page .player-container .player-sub-info-container #content p {
+        font-size: $sub-font; 
+    } 
+
+    .player-page .player-container .player-sub-info-container #content h3 {
+        font-size: $sub-font + 0.25em; 
+    } 
+
+    .player-page .player-container .upcoming-matches-container .upcoming-matches-content-container .upcoming-matches-content .upcoming-matches p {
+        font-size: $sub-font + 0.45em; 
+    } 
+
+    .player-page .player-container .upcoming-matches-container .upcoming-matches-content-container .upcoming-matches-content .upcoming-matches #left-team-content #team-names {
+        font-size: $sub-font; 
+    } 
+
+    .player-page .player-container .upcoming-matches-container .upcoming-matches-content-container .upcoming-matches-content .upcoming-matches #right-team-content #team-names {
+        font-size: $sub-font; 
+    } 
+
+    .player-page .player-container .upcoming-matches-container .upcoming-matches-content-container .upcoming-matches-content .upcoming-matches #left-team-content img {
+        width: 30px;
+        max-height: 35px;
+    } 
+
+    .player-page .player-container .upcoming-matches-container .upcoming-matches-content-container .upcoming-matches-content .upcoming-matches #left-team-content svg {
+        width: 30px; 
+        height: 30px; 
+    } 
+
+    .player-page .player-container .upcoming-matches-container .upcoming-matches-content-container .upcoming-matches-content .upcoming-matches #right-team-content img {
+        width: 30px; 
+        max-height: 35px; 
+    } 
+
+    .player-page .player-container .upcoming-matches-container .upcoming-matches-content-container .upcoming-matches-content .upcoming-matches #right-team-content svg {
+        width: 30px; 
+        height: 30px; 
+    }
+} 
+
+@media only screen and (min-width: 1500px) {
+    .player-page .player-container .player-sub-info-container {
+        width: 60%; 
+    } 
+
+    .player-page .player-container .upcoming-matches-container .upcoming-matches-content-container .upcoming-matches-content .upcoming-matches {
+        width: 60%; 
+    }
+} 
+
+@media only screen and (min-width: 2000px) {
+    .player-page .player-container .player-sub-info-container {
+        width: 50%; 
+    } 
+
+    .player-page .player-container .upcoming-matches-container .upcoming-matches-content-container .upcoming-matches-content .upcoming-matches {
+        width: 50%; 
+    }
+}

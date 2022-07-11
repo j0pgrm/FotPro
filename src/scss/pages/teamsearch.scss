@@ -1,0 +1,172 @@
+@import "../partials/partials"; 
+
+.teams-page {
+    width: 100%; 
+    height: auto; 
+    @extend .center; 
+    position: relative; 
+    flex-direction: column; 
+
+    .teams-container {
+        width: 85%; 
+        height: auto; 
+        @extend .center; 
+        flex-direction: column; 
+        margin-top: 65px; 
+
+        h1 {
+            font-size: $title-font; 
+            font-family: $title-family; 
+            margin: 25px 0px; 
+        } 
+
+        input {
+            width: 90%; 
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white; 
+            outline: none;
+            padding-left: 20px; 
+        } 
+
+        button {
+            width: 175px;
+            padding: 10px 0px;
+            margin: 35px 0px;
+            font-size: $sub-font; 
+            font-family: $sub-family;
+            border: none;
+            background-color: rgb(0, 165, 240);
+            color: rgb(255, 255, 255);
+            border-radius: 30px;
+        }
+    } 
+
+    h2 {
+        font-size: $title-font - 0.2em; 
+        font-family: $title-family; 
+    }
+
+    .popular-teams-container {
+        width: 85%; 
+        height: auto; 
+        @extend .center; 
+        flex-direction: column; 
+        margin: 25px 0px; 
+
+        h2 {
+            font-size: $title-font - 0.2em; 
+            font-family: $title-family; 
+        } 
+    } 
+
+    .search-team-result-container {
+        width: 85%; 
+        height: auto; 
+        @extend .center; 
+        flex-direction: column; 
+        margin: 25px 0px; 
+
+        h2 {
+            font-size: $title-font - 0.2em; 
+            font-family: $title-family; 
+        } 
+
+        .search-team-result-content {
+            width: 100%; 
+            height: auto; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(275px, 2fr));
+            justify-items: center; 
+            row-gap: 25px; 
+            column-gap: 20px; 
+
+            #team-item {
+                width: 275px; 
+                height: 200px; 
+                background-color: $main-light; 
+                border-radius: 20px; 
+                @extend .center; 
+                flex-direction: column; 
+                justify-content: space-evenly; 
+                margin: 15px 0px; 
+                text-decoration: none; 
+
+                img {
+                    width: 55px; 
+                    height: auto; 
+                } 
+
+                svg {
+                    width: 55px; 
+                    height: auto; 
+                }
+
+                h3 {
+                    width: 85%; 
+                    font-size: $title-font - 0.65em; 
+                    font-family: $title-family; 
+                    margin: 0px; 
+                    text-align: center; 
+                    color: $tertiary-color; 
+                    text-decoration: none; 
+                }
+            }
+        }
+    }
+} 
+
+#loading-circle {
+    position: relative; 
+    border: 8px solid rgba(0, 0, 0, 0.1); 
+    border-top: 8px solid $secondary-color; 
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-top: 50px; 
+    animation: spin 1.25s linear infinite; 
+    margin: 0px; 
+    z-index: 5; 
+    margin-top: 25px; 
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+}
+
+
+@media only screen and (min-width: 1500px) {
+    .teams-page .teams-container input {
+        width: 75%; 
+    } 
+
+    .teams-page .search-team-result-container .search-team-result-content {
+        width: 80%; 
+    } 
+
+    .teams-page .search-team-result-container .search-team-result-content {
+        grid-template-columns: repeat(auto-fit, minmax(325px, 2fr));
+    }
+
+    .teams-page .search-team-result-container .search-team-result-content #team-item {
+        width: 325px; 
+        height: 250px; 
+
+        img {
+            width: 70px; 
+        }
+    }
+} 
+
+@media only screen and (min-width: 2000px) {
+    .teams-page .teams-container input {
+        width: 60%; 
+    } 
+
+    .teams-page .search-team-result-container .search-team-result-content {
+        width: 60%; 
+    } 
+}

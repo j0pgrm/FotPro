@@ -1,0 +1,98 @@
+@import "../partials/partials"; 
+
+
+.league-show-case-page {
+    width: 100%; 
+    @extend .center; 
+    flex-direction: column; 
+
+    .league-show-case-content {
+        width: 90%; 
+        @extend .center; 
+        flex-direction: column; 
+        margin-top: 65px; 
+
+        h2 {
+            font-size: $title-font; 
+            font-family: $title-family; 
+            text-align: center; 
+        } 
+
+        .league-content-grid-container {
+            width: 100%; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); 
+            justify-items: center; 
+            row-gap: 25px; 
+            column-gap: 15px; 
+            margin: 35px 0px; 
+
+            .league-content {
+                position: relative; 
+                width: 250px; 
+                height: 165px; 
+                display: flex; 
+                align-items: flex-end; 
+                justify-content: flex-end;
+                overflow: hidden; 
+                color: $tertiary-color; 
+                background-color: $main-color; 
+                text-decoration: none; 
+
+                .background-img {
+                    position: absolute; 
+                    width: 100%; 
+                    height: 165px; 
+                    background-size: cover !important; 
+                    opacity: 0.35; 
+                } 
+
+                #img-title-container {
+                    width: 98%; 
+                    z-index: 1; 
+
+                    img {
+                        width: 50px; 
+                        height: auto; 
+                    } 
+
+                    h3 {
+                        margin: 0px; 
+                        font-size: $title-font - 0.5em; 
+                        font-family: $title-family; 
+                    }
+                }
+            }
+        }
+    }
+} 
+
+
+@media only screen and (min-width: 750px) {
+    .league-show-case-page .league-show-case-content .league-content-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    } 
+
+    .league-show-case-page .league-show-case-content .league-content-grid-container .league-content {
+        width: 300px; 
+        height: 195px; 
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    .league-show-case-page .league-show-case-content .league-content-grid-container .league-content {
+        height: 185px; 
+    }
+} 
+
+@media only screen and (min-width: 1500px) {
+    .league-show-case-page .league-show-case-content .league-content-grid-container {
+        width: 70%; 
+    }
+} 
+
+@media only screen and (min-width: 2000px) {
+    .league-show-case-page .league-show-case-content .league-content-grid-container {
+        width: 55%; 
+    }
+}

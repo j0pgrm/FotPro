@@ -1,0 +1,287 @@
+@import "../partials/partials"; 
+
+.main-page {
+    width: 100%; 
+    height: auto; 
+    @extend .center; 
+    flex-direction: column; 
+    font-size: $sub-font; 
+
+    .css-ohwg9z {
+        width: 100%; 
+        height: 100vh; 
+        overflow: hidden; 
+
+        .css-1m9128y {
+            display: none; 
+        }
+
+        .slider-content {
+            width: 100%; 
+            height: 100vh; 
+            @extend .center; 
+
+            .background-overlay {
+                position: absolute; 
+                width: 100%; 
+                height: 100vh; 
+                background-color: rgba(23, 48, 75, 0.75);  
+            }
+
+            .center-content {
+                position: relative; 
+                @extend .center; 
+                flex-direction: column; 
+                z-index: 5; 
+
+                h1 {
+                    font-size: $title-font; 
+                    font-family: $title-family; 
+                } 
+
+                button {
+                    width: 175px;
+                    padding: 10px 0px;
+                    margin: 20px 0px; 
+                    font-size: $sub-font; 
+                    font-family: $sub-family; 
+                    border: none; 
+                    background-color: $secondary-color; 
+                    color: $tertiary-color; 
+                    border-radius: 30px; 
+                    cursor: pointer; 
+                }
+            }
+        }
+    }
+    
+    .list-of-teams-container {
+        width: 85%; 
+        height: auto; 
+        margin-top: 60px; 
+        margin-bottom: 35px; 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+        justify-items: center; 
+        row-gap: 25px; 
+        overflow: hidden; 
+
+        #item {
+            width: 100%; 
+            height: 200px; 
+            background-color: rgba(0, 165, 240, 0.4); //secondary color 
+            position: relative; 
+            @extend .center; 
+            flex-direction: column; 
+            justify-content: flex-end; 
+            cursor: pointer; 
+            color: $tertiary-color; 
+            text-decoration: none; 
+
+            .item-background-img {
+                position: absolute; 
+                width: 100%; 
+                height: 100%; 
+                background-size: cover !important; 
+                opacity: 0.35; 
+            } 
+
+            .img-title-container {
+                width: 95%; 
+                z-index: 1; 
+
+                img {
+                    width: 35px; 
+                    height: auto; 
+                    opacity: 1; 
+                } 
+
+                h1 {
+                    width: 90%; 
+                    font-family: $title-family; 
+                    font-size: $title-font - 0.5em; 
+                    margin: 0px; 
+                    opacity: 1; 
+                }
+            }
+        }
+    } 
+
+    .advertise-container {
+        width: 100%; 
+        height: auto; 
+        padding: 45px 0px; 
+        margin: 25px 0px; 
+        background-color: $main-light; 
+        @extend .center; 
+        flex-direction: column; 
+
+        #small-stick {
+            width: 85%; 
+            @extend .center; 
+            margin: 25px 0px; 
+
+            #left {
+                width: 45%; 
+                height: 3px; 
+                background-color: $tertiary-color; 
+            } 
+
+            #right {
+                width: 55%; 
+                height: 3px; 
+                background-color: rgba(23, 48, 75, 0.75)
+            }
+        }
+
+        h1 {
+            width: 85%; 
+            font-family: $title-family; 
+            font-size: $title-font; 
+            margin: 0px; 
+        } 
+
+        p { 
+            width: 85%; 
+            font-family: $sub-family; 
+            font-size: $sub-font; 
+            margin: 0px; 
+            line-height: 2.5em;
+        }
+    } 
+
+    .recent-container {
+        width: 85%; 
+        height: auto; 
+        margin-top: 35px; 
+        margin-bottom: 60px; 
+        @extend .center; 
+        flex-direction: column; 
+
+        h2 { 
+            font-family: $title-family; 
+            font-size: $title-font - 0.2em; 
+            color: $secondary-color; 
+            margin: 0px; 
+        } 
+
+        .recent-content {
+            width: 100%; 
+            height: auto; 
+            @extend .center; 
+            flex-direction: column; 
+
+            #recent-item {
+                width: 85%; 
+                height: 95px; 
+                padding: 5px 20px; 
+                background-color: $main-light; 
+                @extend .center; 
+                margin: 15px 0px; 
+                border-radius: 25px; 
+                text-align: center; 
+                font-family: $sub-family; 
+                font-size: $sub-font; 
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 500px) {
+    .main-page .list-of-teams-container #item {
+        height: 300px; 
+    } 
+}
+
+@media only screen and (min-width: 650px) {
+    .main-page .list-of-teams-container {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+    } 
+
+    .main-page .list-of-teams-container #item {
+        width: 500px; 
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .main-page .list-of-teams-container {
+        grid-template-columns: repeat(auto-fit, minmax(45%, 2fr)); 
+        row-gap: 25px; 
+        column-gap: 25px; 
+    } 
+
+    .main-page .list-of-teams-container #item {
+        width: 100%; 
+        height: 200px; 
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .main-page .list-of-teams-container #item {
+        height: 275px; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .main-page .list-of-teams-container #item .img-title-container {
+        width: 85%; 
+        text-align: center; 
+
+        img {
+            width: 65px; 
+        } 
+
+        h1 {
+            font-size: $title-font; 
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .main-page .list-of-teams-container {
+        width: 65%; 
+
+        #item {
+            height: 350px; 
+        }
+    }
+
+    .main-page .advertise-container h1 {
+        width: 65%; 
+    } 
+
+    .main-page .advertise-container #small-stick {
+        width: 65%; 
+    } 
+
+    .main-page .advertise-container p {
+        width: 65%;
+    } 
+
+    .main-page .recent-container .recent-content #recent-item {
+        width: 75%; 
+    }
+} 
+
+@media only screen and (min-width: 2000px) {
+    .main-page .list-of-teams-container {
+        width: 50%; 
+    } 
+
+    .main-page .advertise-container h1 {
+        width: 50%; 
+    } 
+
+    .main-page .advertise-container #small-stick {
+        width: 50%; 
+    } 
+
+    .main-page .advertise-container p {
+        width: 50%;
+    } 
+
+    .main-page .recent-container .recent-content #recent-item {
+        width: 60%; 
+    }
+}

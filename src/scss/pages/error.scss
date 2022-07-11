@@ -1,0 +1,40 @@
+@import "../partials/partials"; 
+
+.error-page {
+    width: 100%; 
+    @extend .center; 
+    flex-direction: column; 
+    margin: 35px 0px; 
+
+    #four {
+        width: 100%; 
+        text-align: center; 
+        font-size: $title-font; 
+        font-family: $title-family; 
+        color: $highlight-color; 
+    } 
+
+    #not-found {
+        width: 100%; 
+        text-align: center; 
+        font-size: $title-font; 
+        font-family: $title-family; 
+    } 
+
+    button {
+        width: 175px;
+        padding: 10px 0px;
+        margin: 20px 0px; 
+        font-size: $sub-font; 
+        font-family: $sub-family; 
+        border: none; 
+        background-color: $secondary-color; 
+        color: $tertiary-color; 
+        border-radius: 30px; 
+    }
+
+    img {
+        width: 300px; 
+        height: auto; 
+    }
+}

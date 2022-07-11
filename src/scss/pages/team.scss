@@ -1,0 +1,1058 @@
+@import "../partials/partials"; 
+
+.team-page {
+    width: 100%; 
+    height: auto; 
+    @extend .center; 
+    position: relative; 
+    flex-direction: column; 
+
+    .team-container {
+        width: 100%; 
+        height: auto; 
+        @extend .center; 
+        flex-direction: column; 
+        padding-top: 85px; 
+        padding-bottom: 25px; 
+        background-color: $main-light; 
+
+        .team-icon-name-container {
+            width: 85%; 
+            height: auto; 
+            @extend .center; 
+            flex-direction: column; 
+
+            img {
+                width: 75px; 
+                height: auto; 
+                margin: 15px 0px; 
+            } 
+
+            h2 {
+                text-align: center; 
+                font-size: $title-font - 0.2em; 
+                font-family: $title-family; 
+                margin: 15px 0px 0px 0px; 
+            } 
+
+            p {
+                font-size: $sub-font; 
+                font-family: $sub-family; 
+                margin: 0px; 
+                color: $highlight-color; 
+            }
+        }
+    } 
+
+    .horizontal-scroll-container {
+        width: 100%; 
+        overflow-x: hidden; 
+        background-color: $main-light; 
+
+        .horizontal-scroll-content {
+            width: auto; 
+            height: auto; 
+            overflow-x: scroll; 
+            padding-top: 15px; 
+            @extend .center; 
+            justify-content: start; 
+            
+            &::-webkit-scrollbar {
+                width: 0px; 
+                height: 0px; 
+            }
+            
+            #item {
+                width: auto; 
+                padding: 0px 10px; 
+                padding-bottom: 5px; 
+                margin: 0px 25px; 
+                border-bottom: $main-light; 
+                font-family: $sub-family; 
+                font-size: $sub-family; cursor: pointer; 
+            }
+        }
+    } 
+
+    .team-overview-comp-container {
+        width: 85%; 
+        height: auto; 
+        @extend .center; 
+        flex-direction: column; 
+
+        .overview-content {
+            width: 100%; 
+            height: auto; 
+            @extend .center; 
+            flex-direction: column; 
+
+            .stadium-league-content-container {
+                width: 100%; 
+                @extend .center; 
+                flex-direction: column; 
+                margin: 40px 0px; 
+
+                .stadium-container {
+                    width: 100%; 
+                    background-color: $main-light; 
+                    margin: 15px 0px; 
+                    padding: 25px 0px; 
+                    border-radius: 15px; 
+                    @extend .center; 
+                    flex-direction: column; 
+                    justify-content: space-between; 
+
+                    #stadium-name {
+                        width: 80%; 
+                        @extend .center; 
+                        justify-content: space-between; 
+                        margin-bottom: 20px; 
+
+                        h4 {
+                            font-size: $sub-font + 0.25; 
+                            font-family: $title-family; 
+                            margin: 0px; 
+                        } 
+
+                        svg {
+                            width: 20px; 
+                            height: auto; 
+                        }
+                    } 
+
+                    .opened-grass-info-container {
+                        width: 90%; 
+                        height: auto; 
+                        @extend .center; 
+                        border-top: 2px solid $main-color; 
+
+                        #stick {
+                            height: 50px; 
+                            border-left: 2px solid $main-color; 
+                        }
+
+                        #item {
+                            width: calc(50% - 1px); 
+                            @extend .center; 
+                            flex-direction: column; 
+
+                            p {
+                                font-size: $sub-font; 
+                                font-family: $sub-family; 
+                                color: $highlight-color; 
+                            }
+
+                            h4 {
+                                font-size: $sub-font + 0.25; 
+                                font-family: $title-family; 
+                                margin: 0px; 
+                            }
+                        }
+                    }
+                } 
+
+                .league-container {
+                    width: 100%; 
+                    background-color: $main-light; 
+                    margin: 15px 0px; 
+                    padding: 25px 0px; 
+                    border-radius: 15px; 
+                    @extend .center; 
+                    flex-direction: column; 
+                    justify-content: space-between; 
+                    
+                    .league-content-top {
+                        width: 80%; 
+                        @extend .center; 
+                        justify-content: space-between; 
+                        margin-bottom: 20px; 
+
+                        h4 {
+                            font-size: $sub-font + 0.25; 
+                            font-family: $title-family; 
+                            margin: 0px; 
+                        } 
+
+                        p {
+                            font-size: $sub-font; 
+                            font-family: $sub-family; 
+                        }
+                    } 
+
+                    .league-week-year-content {
+                        width: 90%; 
+                        height: auto; 
+                        @extend .center; 
+                        border-top: 2px solid $main-color; 
+
+                        #stick {
+                            height: 50px; 
+                            border-left: 2px solid $main-color; 
+                        }
+
+                        #item {
+                            width: calc(50% - 1px); 
+                            @extend .center; 
+                            flex-direction: column; 
+
+                            p {
+                                font-size: $sub-font; 
+                                font-family: $sub-family; 
+                                color: $highlight-color; 
+                            }
+
+                            h4 {
+                                font-size: $sub-font + 0.25; 
+                                font-family: $title-family; 
+                                margin: 0px; 
+                            }
+                        }
+                    }
+                }
+            }
+
+            .team-color-container {
+                width: 100%; 
+                background-color: $main-light; 
+                margin: 15px 0px; 
+                padding: 25px 0px; 
+                border-radius: 15px; 
+                @extend .center; 
+                flex-direction: column; 
+
+                h4 {
+                    font-size: $sub-font + 0.25; 
+                    font-family: $title-family; 
+                    margin: 0px; 
+                    margin-bottom: 15px; 
+                } 
+
+                .color-content {
+                    width: 75%; 
+                    @extend .center; 
+                    justify-content: space-evenly; 
+                    margin-top: 15px; 
+    
+                    div {
+                        width: 35px; 
+                        height: 35px; 
+                        border-radius: 100%; 
+                    }
+                }
+            } 
+
+            .top-player-container {
+                width: 100%; 
+                display: flex; 
+                flex-wrap: wrap; 
+                justify-content: space-evenly; 
+                margin: 40px 0px; 
+
+                .top-player-content {
+                    width: 100%; 
+                    background-color: $main-light; 
+                    margin: 15px 0px; 
+                    padding: 25px 0px; 
+                    border-radius: 15px; 
+                    @extend .center; 
+                    flex-direction: column; 
+                    cursor: pointer; 
+                    color: $tertiary-color; 
+                    text-decoration: none; 
+
+                    h4 {
+                        font-size: $sub-font + 0.25; 
+                        font-family: $title-family; 
+                        margin: 0px; 
+                        margin-bottom: 15px; 
+                    }
+
+                    .top-player-left-right {
+                        width: 75%; 
+                        height: auto; 
+                        @extend .center; 
+                        justify-content: space-between; 
+
+                        #player-info {
+                            @extend .center; 
+                            flex-direction: column; 
+
+                            img {
+                                width: 50px; 
+                            }
+
+                            div {
+                                font-size: $sub-font; 
+                                font-family: $sub-family; 
+                            }
+
+                            h2 {
+                                margin: 0px; 
+                                font-size: $title-font - 0.2em; 
+                                font-family: $title-family; 
+                                color: $highlight-color; 
+                            }
+
+                            #goals {
+                                font-size: $sub-font - 0.25em; 
+                                font-family: $title-family; 
+                                color: $highlight-color; 
+                            }
+                        }
+                    }
+                }
+            } 
+
+            .yellow-red-other-content-container {
+                width: 100%; 
+                display: grid; 
+                grid-template-columns: repeat(auto-fit, minmax(100%, 2fr)); 
+                justify-items: center; 
+
+                .single-data-container {
+                    width: 100%; 
+                    background-color: $main-light; 
+                    margin: 15px 0px; 
+                    padding: 25px 0px; 
+                    border-radius: 15px; 
+                    @extend .center; 
+                    flex-direction: column; 
+
+                    h4 {
+                        font-size: $sub-font + 0.25; 
+                        font-family: $title-family; 
+                        margin: 0px; 
+                        text-align: center; 
+                    }
+
+                    .left-right {
+                        width: 40%; 
+                        @extend .center; 
+                        justify-content: space-evenly;
+
+                        h2 {
+                            margin: 0px; 
+                            font-size: $title-font - 0.2em; 
+                            font-family: $title-family; 
+                            color: $highlight-color; 
+                        }
+
+                        img {
+                            width: 50px; 
+                            height: 40px; 
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+    .team-season-comp-container {
+        width: 100%; 
+        height: auto; 
+
+        .top-choose-games-container {
+            width: 100%; 
+            @extend .center; 
+            justify-content: space-evenly; 
+            margin: 15px 0px; 
+
+            #item {
+                width: 90px; 
+                background-color: $main-light; 
+                text-align: center; 
+                padding: 10px 0px; 
+                border-radius: 25px; 
+                font-size: $sub-font - 0.25em; 
+                font-family: $sub-family; 
+                cursor: pointer; 
+            }
+        }
+
+        .top-column-names {
+            width: 100%; 
+            @extend .center; 
+            justify-content: unset; 
+            margin: 15px 0px; 
+
+            .top-column-names-content {
+                width: 100%; 
+                @extend .center; 
+                justify-content: unset; 
+                padding: 0px 15px; 
+
+                #team {
+                    color: $highlight-color; 
+                } 
+
+                #other {
+                    color: $highlight-color; 
+                    text-align: center; 
+                }
+
+                #other-right {
+                    color: $highlight-color; 
+                    text-align: right; 
+                }
+            }
+        }
+
+        .team-item {
+            width: 100%; 
+            @extend .center; 
+            justify-content: unset; 
+            padding: 10px 0px; 
+            border-top: 1px solid $main-light; 
+            border-bottom: 1px solid $main-light; 
+            cursor: pointer; 
+            color: $tertiary-color; 
+            text-decoration: none; 
+
+            .team-item-content {
+                width: 100%; 
+                @extend .center; 
+                justify-content: unset; 
+                padding: 0px 15px; 
+            }
+
+            #team img {
+                width: 20px; 
+                height: auto; 
+                max-height: 25px; 
+                margin-right: 10px; 
+            }
+
+            #team svg {
+                width: 15px; 
+                height: auto; 
+                max-height: 20px; 
+                margin-right: 10px; 
+            }
+        }
+
+        #team {
+            width: 50%; 
+            font-family: $sub-family; 
+            font-size: $sub-font - 0.25em; 
+            text-align: left; 
+            @extend .center; 
+            justify-content: flex-start;
+        }
+
+        #other {
+            width: 10%; 
+            font-family: $sub-family; 
+            font-size: $sub-font - 0.25em; 
+            text-align: center; 
+        }
+
+        #other-right {
+            width: 10%; 
+            font-family: $sub-family; 
+            font-size: $sub-font - 0.25em; 
+            text-align: right; 
+        }
+    } 
+
+    .team-players-comp-container {
+        width: 100%; 
+        height: auto; 
+
+        .player-position-container {
+            width: 100%; 
+            height: auto; 
+            @extend .center; 
+            flex-direction: column; 
+
+            #position-label {
+                width: 100%; 
+                padding: 10px 0px; 
+                @extend .center; 
+
+                #position-label-content {
+                    width: 90%; 
+                    @extend .center; 
+                    justify-content: space-between;
+
+                    h4 {
+                        font-size: $title-font - 0.85em; 
+                        font-family: $title-family; 
+                        margin: 0px; 
+                    } 
+
+                    svg {
+                        width: 15px; 
+                        height: auto; 
+                    }
+                }
+            } 
+
+            #player-container {
+                width: 100%; 
+                @extend .center; 
+                flex-direction: column; 
+
+                #player-content {
+                    width: 100%; 
+                    @extend .center; 
+                    background-color: $main-light; 
+                    border-top: 1px solid $main-color; 
+                    border-bottom: 1px solid $main-color; 
+                    padding: 15px 0px; 
+                    cursor: pointer; 
+                    color: white; 
+                    text-decoration: none; 
+
+                    #player-main-content {
+                        width: 90%; 
+                        @extend .center; 
+                        justify-content: space-between; 
+
+                        #player-img-background {
+                            width: 50px; 
+                            height: 50px; 
+                            background-color: $main-color; 
+                            border-radius: 100%; 
+                            @extend .center; 
+
+                            img {
+                                width: 30px; 
+                                height: auto; 
+                            }
+                        } 
+
+                        h5 {
+                            margin: 0px; 
+                            font-size: $title-font - 1.25em; 
+                            font-family: $title-family;
+                        }
+
+                        .jersey-container {
+                            position: relative; 
+
+                            svg {
+                                width: 45px; 
+                                height: auto; 
+                            } 
+
+                            span {
+                                position: absolute; 
+                                width: 20px; 
+                                top: 35%; 
+                                left: 0; 
+                                right: 0; 
+                                margin-left: auto; 
+                                margin-right: auto; 
+                                color: black; 
+                                text-align: center; 
+                                font-family: monospace; 
+                                font-size: $sub-font; 
+                                font-weight: 600; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+    .team-stats-comp-container {
+        width: 100%; 
+        height: auto; 
+        @extend .center; 
+
+        .team-stats-comp-content {
+            width: 90%; 
+            height: auto; 
+            @extend .center; 
+            flex-direction: column; 
+
+            .goal-passes-container {
+                width: 100%; 
+
+                .goal-shot-related-container {
+                    width: 100%; 
+                    background-color: $main-light; 
+                    margin: 50px 0px; 
+                    padding: 25px 0px; 
+                    border-radius: 15px; 
+                    @extend .center; 
+                    flex-direction: column; 
+                } 
+
+                .passes-possession-related-container {
+                    width: 100%; 
+                    background-color: $main-light; 
+                    margin: 15px 0px; 
+                    padding: 25px 0px; 
+                    border-radius: 15px; 
+                    @extend .center; 
+                    flex-direction: column; 
+                } 
+            }
+
+            .miscellaneous-related-container {
+                width: 100%; 
+                background-color: $main-light; 
+                margin: 50px 0px; 
+                padding: 25px 0px; 
+                border-radius: 15px; 
+                @extend .center; 
+                flex-direction: column; 
+
+                #miscellaneous-item {
+                    width: 80%;  
+                    @extend .center; 
+                    justify-content: space-between; 
+                    border-top: 2px solid $main-color; 
+                    padding: 15px 0px; 
+
+                    .left-text {
+                        font-size: $sub-font - 0.10em; 
+                        font-family: $sub-family; 
+                    } 
+
+                    .right-text {
+                        font-size: $sub-font + 0.1em; 
+                        font-family: $title-family; 
+                        color: $highlight-color; 
+                    }
+                }
+            }
+
+            .left-right {
+                width: 80%; 
+                @extend .center; 
+                justify-content: space-between;
+
+                p {
+                    margin: 0px; 
+                    font-family: $sub-family; 
+                    font-size: $sub-font + 0.15em; 
+                } 
+
+                h3 {
+                    margin: 0px; 
+                    font-family: $title-family; 
+                    font-size: $title-font - 0.65em; 
+                }
+            } 
+
+            .percent-bar-container {
+                width: 80%; 
+                @extend .center; 
+                justify-content: space-between; 
+                padding-top: 10px; 
+
+                #left-text {
+                    width: 35%; 
+                    text-align: left; 
+                    font-size: $sub-font - 0.10em; 
+                    font-family: $sub-family; 
+                } 
+
+                #bar {
+                    position: relative; 
+                    width: 45%; 
+                    height: 7px; 
+                    background-color: $main-color; 
+                    border-radius: 20px; 
+
+                    #bar-fill {
+                        position: absolute; 
+                        height: 7px; 
+                        left: 0%; 
+                        top: 0%; 
+                        background-color: $secondary-color; 
+                        border-radius: 20px; 
+                    }
+                } 
+
+                #right-text {
+                    width: 15%; 
+                    text-align: right; 
+                    font-size: $sub-font + 0.1em; 
+                    font-family: $title-family; 
+                    color: $highlight-color; 
+                }
+            } 
+        }
+    } 
+
+    .team-matches-comp-container {
+        width: 100%; 
+        height: auto; 
+        @extend .center; 
+
+        .team-matches-content {
+            width: 100%; 
+            height: auto; 
+            @extend .center; 
+            flex-direction: column; 
+
+            #no-games {
+                width: 85%; 
+                font-size: $title-font - 0.25em; 
+                font-family: $title-family; 
+                text-align: center; 
+                margin-top: 25px; 
+                margin-bottom: 100px; 
+            }
+
+            .prev-upcoming-games-container {
+                width: 100%; 
+                @extend .center; 
+                justify-content: space-evenly; 
+                margin: 15px 0px; 
+
+                #item {
+                    width: 90px; 
+                    background-color: $main-light; 
+                    text-align: center; 
+                    padding: 10px 0px; 
+                    border-radius: 25px; 
+                    font-size: $sub-font - 0.25em; 
+                    font-family: $sub-family; 
+                    cursor: pointer; 
+                }
+            }
+
+            .match-game-container {
+                width: 100%; 
+                padding: 10px 0px; 
+                color: $tertiary-color; 
+                text-decoration: none; 
+                border-top: 1px solid $main-color; 
+                border-bottom: 1px solid $main-color; 
+                padding: 15px 0px; 
+                background-color: $main-light; 
+                @extend .center; 
+                cursor: pointer; 
+
+                .match-game-content {
+                    width: 90%; 
+                    @extend .center; 
+                    justify-content: space-between; 
+
+                    #team-name-team-logo-container {
+                        width: 35%; 
+                        @extend .center; 
+                        justify-content: space-between; 
+
+                        img {
+                            width: 15px; 
+                            height: auto; 
+                            max-height: 20px; 
+                        }
+
+                        #team-names {
+                            font-size: $sub-font - 0.35em; 
+                            font-family: $sub-family; 
+                        }
+
+
+                        .right {
+                            text-align: right; 
+                        } 
+                        
+                        .left {
+                            text-align: left; 
+                        }
+                    } 
+
+                    #score {
+                        width: auto; 
+                        font-size: $sub-font; 
+                        font-family: $sub-family; 
+                        font-weight: bolder; 
+                        text-align: center; 
+                        color: $highlight-color; 
+                    }
+                }
+            }
+
+        }
+    }
+} 
+
+
+@media only screen and (min-width: 550px) {
+    .team-page .horizontal-scroll-container .horizontal-scroll-content {
+        overflow-x: hidden; 
+        width: 100%; 
+        justify-content: space-evenly; 
+    } 
+
+    .team-page .team-season-comp-container .top-column-names .top-column-names-content #other-right {
+        text-align: center; 
+    } 
+
+    .team-page .team-season-comp-container #other-right {
+        text-align: center; 
+    }
+} 
+
+@media only screen and (min-width: 700px) {
+    .team-page .team-overview-comp-container .overview-content .stadium-league-content-container {
+        flex-direction: row; 
+        justify-content: space-between; 
+
+        .stadium-container {
+            width: 45%; 
+        } 
+
+        .league-container {
+            width: 45%; 
+        }
+    } 
+
+    .team-page .team-overview-comp-container .overview-content .team-color-container {
+        width: 45%; 
+    }
+
+    .team-page .team-overview-comp-container .overview-content .top-player-container .top-player-content {
+        width: auto; 
+        // flex-basis: calc(50% - 1em); 
+        flex-basis: 45%; 
+    } 
+
+    .team-page .team-overview-comp-container .overview-content .yellow-red-other-content-container {
+        grid-template-columns: repeat(auto-fit, minmax(45%, 2fr)); 
+        row-gap: 0px; 
+        column-gap: 20px; 
+
+        .single-data-container {
+            padding: 0px; 
+            height: 200px; 
+        }
+    }
+} 
+
+@media only screen and (min-width: 1024px) {
+    .team-page .team-season-comp-container #team {
+        font-size: $sub-font; 
+    } 
+
+    .team-page .team-season-comp-container #other {
+        font-size: $sub-font; 
+    } 
+
+    .team-page .team-season-comp-container #other-right {
+        font-size: $sub-font; 
+    } 
+
+    .team-page .team-season-comp-container .team-item #team img {
+        width: 30px; 
+        max-height: 35px;
+        margin-right: 20px;
+    } 
+
+    .team-page .team-season-comp-container .team-item #team svg {
+        width: 30px; 
+        max-height: 30px;
+        margin-right: 20px;
+    } 
+
+    .team-page .team-season-comp-container .top-choose-games-container #item {
+        font-size: $sub-font; 
+        width: 125px; 
+    } 
+
+    .team-page .team-matches-comp-container .team-matches-content .prev-upcoming-games-container #item {
+        font-size: $sub-font; 
+        width: 125px; 
+    }
+
+    .team-page .team-stats-comp-container .team-stats-comp-content .percent-bar-container #left-text {
+        font-size: $sub-font + 0.10em; 
+    } 
+
+    .team-page .team-stats-comp-container .team-stats-comp-content .left-right p {
+        font-size: $sub-font + 0.5em; 
+    } 
+
+    .team-page .team-stats-comp-container .team-stats-comp-content .percent-bar-container #right-text {
+        font-size: $sub-font + 0.5em; 
+    } 
+
+    .team-page .team-stats-comp-container .team-stats-comp-content .left-right h3 {
+        font-size: $title-font; 
+    } 
+
+    .team-page .team-stats-comp-container .team-stats-comp-content .miscellaneous-related-container #miscellaneous-item .left-text {
+        font-size: $sub-font + 0.10em; 
+    } 
+
+    .team-page .team-stats-comp-container .team-stats-comp-content .miscellaneous-related-container #miscellaneous-item .right-text {
+        font-size: $sub-font + 0.5em; 
+    } 
+
+    .team-page .team-matches-comp-container .team-matches-content .match-game-container .match-game-content #team-name-team-logo-container img {
+        width: 30px;
+        max-height: 35px; 
+    }
+
+    .team-page .team-matches-comp-container .team-matches-content .match-game-container .match-game-content #team-name-team-logo-container svg {
+        width: 30px; 
+        height: 30px; 
+    } 
+
+    .team-page .team-matches-comp-container .team-matches-content .match-game-container .match-game-content #score {
+        font-size: $sub-font + 0.45em; 
+    } 
+
+    .team-page .team-matches-comp-container .team-matches-content .match-game-container .match-game-content #team-name-team-logo-container #team-names {
+        font-size: $sub-font; 
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .team-page .team-overview-comp-container .overview-content .stadium-league-content-container .stadium-container {
+        height: 200px; 
+        justify-content: space-evenly; 
+    } 
+
+    .team-page .team-overview-comp-container .overview-content .stadium-league-content-container .league-container {
+        height: 200px; 
+        justify-content: space-evenly; 
+    } 
+
+    .team-page .team-overview-comp-container .overview-content .team-color-container {
+        width: 30%; 
+        height: 150px; 
+    }
+
+    .team-page .team-overview-comp-container .overview-content .top-player-container .top-player-content {
+        width: 45%; 
+        height: 200px; 
+    } 
+
+    .team-page .team-overview-comp-container .overview-content .yellow-red-other-content-container {
+        grid-template-columns: repeat(auto-fit, minmax(20%, 2fr));
+    } 
+
+    .team-page .team-players-comp-container .player-position-container #player-container #player-content #player-main-content {
+        width: 80%; 
+    } 
+} 
+
+@media only screen and (min-width: 1500px) {
+    .team-page .team-overview-comp-container .overview-content {
+        width: 75%; 
+    } 
+
+    .team-page .horizontal-scroll-container {
+        display: flex; 
+        justify-content: center; 
+
+        .horizontal-scroll-content {
+            width: 80%; 
+        }
+    } 
+
+    .team-page .team-season-comp-container .top-column-names {
+        display: flex; 
+        justify-content: center; 
+
+        .top-column-names-content {
+            padding: 0px; 
+            width: 65%; 
+        }
+    } 
+
+    .team-page .team-season-comp-container .team-item {
+        display: flex; 
+        justify-content: center; 
+
+        .team-item-content {
+            width: 65%; 
+            padding: 0px; 
+        }
+    } 
+
+    .team-page .team-players-comp-container .player-position-container #position-label #position-label-content {
+        width: 65%; 
+    } 
+
+    .team-page .team-players-comp-container .player-position-container #player-container #player-content #player-main-content {
+        width: 55%; 
+    } 
+
+    .team-page .team-stats-comp-container .team-stats-comp-content .goal-passes-container {
+        width: 100%; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+
+        .goal-shot-related-container {
+            width: 45%; 
+            height: 300px; 
+            padding: 0px; 
+        } 
+
+        .passes-possession-related-container {
+            width: 45%; 
+            height: 300px; 
+            padding: 0px; 
+        }
+    } 
+
+    .team-page .team-stats-comp-container .team-stats-comp-content {
+        width: 65%; 
+    } 
+
+    .team-page .team-matches-comp-container .team-matches-content .match-game-container .match-game-content {
+        width: 65%; 
+    }
+} 
+
+@media only screen and (min-width: 2000px) {
+    .team-page .team-overview-comp-container .overview-content {
+        width: 60%; 
+    } 
+
+    .team-page .horizontal-scroll-container .horizontal-scroll-content {
+        width: 65%; 
+    } 
+
+    .team-page .team-season-comp-container .top-column-names .top-column-names-content {
+        width: 50%; 
+    } 
+
+    .team-page .team-season-comp-container .team-item .team-item-content {
+        width: 50%; 
+    } 
+
+    .team-page .team-season-comp-container {
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+
+    .team-page .team-season-comp-container .top-choose-games-container {
+        width: 25%; 
+        justify-content: space-between;
+    } 
+
+    .team-page .team-matches-comp-container .team-matches-content .prev-upcoming-games-container {
+        width: 25%; 
+        justify-content: space-between; 
+    }
+
+    .team-page .team-players-comp-container .player-position-container #position-label #position-label-content {
+        width: 50%; 
+    } 
+
+    .team-page .team-players-comp-container .player-position-container #player-container #player-content #player-main-content {
+        width: 40%; 
+    } 
+
+    .team-page .team-stats-comp-container .team-stats-comp-content {
+        width: 50%; 
+    } 
+
+    .team-page .team-matches-comp-container .team-matches-content .match-game-container .match-game-content {
+        width: 50%; 
+    }
+}

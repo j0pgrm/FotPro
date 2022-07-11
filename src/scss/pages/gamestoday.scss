@@ -1,0 +1,139 @@
+@import "../partials/partials"; 
+
+.games-today-page {
+    width: 100%; 
+    height: auto; 
+    @extend .center; 
+
+    .games-today-container {
+        width: 100%; 
+        margin-top: 65px; 
+        @extend .center; 
+        flex-direction: column; 
+
+        h2 {
+            font-size: $title-font; 
+            font-family: $title-family; 
+        } 
+
+        .match-container {
+            width: 100%; 
+            border-top: 1px solid $main-light; 
+            padding: 15px 0px; 
+            @extend .center; 
+            color: $tertiary-color; 
+            text-decoration: none; 
+
+            .match-content {
+                width: 90%; 
+                display: flex; 
+                justify-content: space-between;
+
+                #left-team-container {
+                    width: 35%; 
+                    @extend .center; 
+                    justify-content: space-between; 
+
+                    img {
+                        width: 15px; 
+                        height: auto; 
+                        max-height: 20px; 
+                    } 
+
+                    svg {
+                        width: 15px; 
+                        height: 15px; 
+                    } 
+
+                    p {
+                        font-size: $sub-font - 0.35em; 
+                        font-family: $sub-family; 
+                        text-align: right; 
+                        margin: 0px; 
+                    }
+                } 
+
+                h3 {
+                    margin: 0px; 
+                    width: auto; 
+                    font-family: $sub-family;
+                    font-size: $sub-font; 
+                    font-weight: bolder; 
+                    text-align: center; 
+                    color: $highlight-color; 
+                }
+
+                #right-team-container {
+                    width: 35%; 
+                    @extend .center; 
+                    justify-content: space-between; 
+                    
+                    img {
+                        width: 15px; 
+                        height: auto; 
+                        max-height: 20px; 
+                    } 
+
+                    svg {
+                        width: 15px; 
+                        height: 15px; 
+                    } 
+
+                    p {
+                        font-size: $sub-font - 0.35em; 
+                        font-family: $sub-family; 
+                        text-align: left; 
+                        margin: 0px; 
+                    }
+                }
+            }
+        }
+    }
+} 
+
+
+@media only screen and (min-width: 1024px) {
+    .games-today-page .games-today-container .match-container .match-content h3 {
+        font-size: $sub-font + 0.45em; 
+    } 
+
+    .games-today-page .games-today-container .match-container .match-content #left-team-container p {
+        font-size: $sub-font; 
+    } 
+
+    .games-today-page .games-today-container .match-container .match-content #right-team-container p {
+        font-size: $sub-font; 
+    } 
+
+    .games-today-page .games-today-container .match-container .match-content #left-team-container img {
+        width: 30px;
+        max-height: 35px;
+    } 
+
+    .games-today-page .games-today-container .match-container .match-content #left-team-container svg {
+        width: 30px; 
+        height: 30px; 
+    } 
+
+    .games-today-page .games-today-container .match-container .match-content #right-team-container img {
+        width: 30px; 
+        max-height: 35px; 
+    } 
+
+    .games-today-page .games-today-container .match-container .match-content #right-team-container svg {
+        width: 30px; 
+        height: 30px; 
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .games-today-page .games-today-container .match-container .match-content {
+        width: 65%; 
+    }
+} 
+
+@media only screen and (min-width: 2000px) {
+    .games-today-page .games-today-container .match-container .match-content {
+        width: 50%; 
+    }
+}
