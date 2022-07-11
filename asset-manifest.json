@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/FotPro/static/css/main.5ccba4be.css",
+    "main.js": "/FotPro/static/js/main.831d9727.js",
+    "static/js/787.4861465c.chunk.js": "/FotPro/static/js/787.4861465c.chunk.js",
+    "static/media/serie-a-landscape.png": "/FotPro/static/media/serie-a-landscape.8c527075b1987a267e51.png",
+    "static/media/real-madrid.jpg": "/FotPro/static/media/real-madrid.126b9f2f5da1845c5053.jpg",
+    "static/media/man-city.jpg": "/FotPro/static/media/man-city.808921c451e6f3a4af00.jpg",
+    "static/media/barcelona.jpg": "/FotPro/static/media/barcelona.9c0458ca8cff9eb2c785.jpg",
+    "static/media/chelsea.jpg": "/FotPro/static/media/chelsea.98e7b8d061f09035b3db.jpg",
+    "static/media/la-liga-landscape.jpg": "/FotPro/static/media/la-liga-landscape.9f10226d254536080ec9.jpg",
+    "static/media/hasbulla-2.png": "/FotPro/static/media/hasbulla-2.93225ba3079af3427eaa.png",
+    "static/media/eredivisie-landscape.jfif": "/FotPro/static/media/eredivisie-landscape.a1684456ac15cd883b23.jfif",
+    "static/media/mls-icon.png": "/FotPro/static/media/mls-icon.a72792624112dab6a45d.png",
+    "static/media/premier-league-landscape.jfif": "/FotPro/static/media/premier-league-landscape.f679a47e202489cfb495.jfif",
+    "static/media/mls-landscape.jpg": "/FotPro/static/media/mls-landscape.1027054ad81e352d557b.jpg",
+    "static/media/main-img-background.jpg": "/FotPro/static/media/main-img-background.89b4f35b9ddfb135bf73.jpg",
+    "static/media/bundesliga-icon.png": "/FotPro/static/media/bundesliga-icon.d726ea4282f4b65655bc.png",
+    "static/media/bundesliga-landscape.jpg": "/FotPro/static/media/bundesliga-landscape.639976f663d22e093b38.jpg",
+    "static/media/premier-league-icon.png": "/FotPro/static/media/premier-league-icon.0f6ee3bec2bda044c594.png",
+    "static/media/ligue-1-landscape.jpg": "/FotPro/static/media/ligue-1-landscape.b388f7c366095acca3f9.jpg",
+    "static/media/liga-mx-landscape.jpg": "/FotPro/static/media/liga-mx-landscape.9b15eaa8bbdb57bf690b.jpg",
+    "static/media/nav-icon.png": "/FotPro/static/media/nav-icon.5ea52bccbacfa754f9b9.png",
+    "static/media/red-card.png": "/FotPro/static/media/red-card.ba0763ac9561ee6d94f5.png",
+    "static/media/yellow-card.png": "/FotPro/static/media/yellow-card.dbaf7307b778b05c848c.png",
+    "static/media/ligue-1-icon.png": "/FotPro/static/media/ligue-1-icon.95d16995fd2a7607f2a5.png",
+    "static/media/liga-mx-icon.png": "/FotPro/static/media/liga-mx-icon.bb779bf7991ff30d3eb6.png",
+    "static/media/eredivisie-icon.png": "/FotPro/static/media/eredivisie-icon.3b9b8806c1ebe7df7c4d.png",
+    "static/media/la-liga-icon.svg": "/FotPro/static/media/la-liga-icon.661e4d5c607d6d766967c6647c9479f6.svg",
+    "static/media/serie-a-icon.svg": "/FotPro/static/media/serie-a-icon.9b9b66630c558a67e08e6097ed508ef0.svg",
+    "index.html": "/FotPro/index.html",
+    "main.5ccba4be.css.map": "/FotPro/static/css/main.5ccba4be.css.map",
+    "main.831d9727.js.map": "/FotPro/static/js/main.831d9727.js.map",
+    "787.4861465c.chunk.js.map": "/FotPro/static/js/787.4861465c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ccba4be.css",
+    "static/js/main.831d9727.js"
+  ]
+}
