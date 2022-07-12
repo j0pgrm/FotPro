@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FotPro/static/css/main.5ccba4be.css",
-    "main.js": "/FotPro/static/js/main.831d9727.js",
+    "main.js": "/FotPro/static/js/main.d60aed83.js",
     "static/js/787.4861465c.chunk.js": "/FotPro/static/js/787.4861465c.chunk.js",
     "static/media/serie-a-landscape.png": "/FotPro/static/media/serie-a-landscape.8c527075b1987a267e51.png",
     "static/media/real-madrid.jpg": "/FotPro/static/media/real-madrid.126b9f2f5da1845c5053.jpg",
@@ -30,11 +30,11 @@
     "static/media/serie-a-icon.svg": "/FotPro/static/media/serie-a-icon.9b9b66630c558a67e08e6097ed508ef0.svg",
     "index.html": "/FotPro/index.html",
     "main.5ccba4be.css.map": "/FotPro/static/css/main.5ccba4be.css.map",
-    "main.831d9727.js.map": "/FotPro/static/js/main.831d9727.js.map",
+    "main.d60aed83.js.map": "/FotPro/static/js/main.d60aed83.js.map",
     "787.4861465c.chunk.js.map": "/FotPro/static/js/787.4861465c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ccba4be.css",
-    "static/js/main.831d9727.js"
+    "static/js/main.d60aed83.js"
   ]
 }
