@@ -13,10 +13,9 @@ function Footer() {
                     <h4 id="top-text">Soccer</h4>
                     <div className="stick"></div>
                     <div className="link-container">
-                        <Link to="">Teams</Link> 
-                        <Link to="">Players in Teams</Link> 
-                        <Link to="">Matches</Link> 
-                        <Link to="">Leagues</Link> 
+                        <Link to="/FotPro/TeamSearch">Teams</Link> 
+                        <Link to="/FotPro/GamesToday">Matches</Link> 
+                        <Link to="/FotPro/LeagueShowCase">Leagues</Link> 
                     </div>
                 </div>
 
